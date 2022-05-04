@@ -1,6 +1,6 @@
 # Project My Favorite Songs
 
-- My favorite songs allows the user to input their favorite songs and create a log of what their favorite songs are.
+- My favorite songs allows the user to input their favorite songs and create a log of what their favorite songs are. The user can login or sign up and then they can start adding their songs.
 
 ## Resource
 
