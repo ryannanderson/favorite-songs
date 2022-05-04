@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>random songs</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="bars"></div>
+
+      <header>Songs</header>
+      <div id="hero-image"></div>
+
+      <div class="flex-main">
+        <div class="white-box">
+          <div class="flexbox">
+            <div class="white-box-flex">
+              <div id="start">
+                <h2>Enter a song</h2>
+                Title
+                <input type="text" id="new-name" class="new-song" required />
+                Artist
+                <input type="text" id="new-artist" class="new-song" required />
+                Album
+                <input type="text" id="new-album" class="new-song" required />
+                Genre
+                <input type="text" id="new-genre" class="new-song" required />
+                Year
+                <input type="text" id="new-year" class="new-song" required />
+                <button id="addButton" class="enter-button">ADD</button>
+                <button id="saveButton" class="enter-button">SAVE</button>
+              </div>
+              <div id="signup">
+                <h2>Sign Up</h2>
+                <div id="signupFailed"></div>
+                First Name
+                <input type="text" id="firstName" class="new-song" required />
+                Last Name
+                <input type="text" id="lastName" class="new-song" required />
+                Email
+                <input type="text" id="email" class="new-song" required />
+                Password
+                <input type="text" id="password" class="new-song" required />
+                <button id="signUpButton" class="enter-button">SIGN UP</button>
+              </div>
+              <div id="login">
+                <h2>Login</h2>
+                <div id="loginFailed"></div>
+                Email
+                <input type="text" id="loginEmail" class="new-song" required />
+                Password
+                <input
+                  type="text"
+                  id="loginPassword"
+                  class="new-song"
+                  required
+                />
+                <button id="loginButton" class="enter-button">LOGIN</button>
+                <button id="signUpSection" class="enter-button">SIGN UP</button>
+              </div>
+            </div>
+
+            <!-- <input type="text" id="new-song" class="new-song" required /> -->
+          </div>
+        </div>
+        <!-- <button id="random-song">RANDOM</button> -->
+      </div>
+      <main>
+        <div>
+          <h2>PLAYLIST</h2>
+          <ul id="song-options"></ul>
+        </div>
+      </main>
+      <footer>copyright &copy;</footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

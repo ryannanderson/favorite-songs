@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(images/records.jpg);
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  grid-column: 2 / 8;
+  grid-row: 1 / 2;
+
+  font-size: 3rem;
+}
+
+.new-song {
+  border-radius: 40px;
+  border: solid black 1px;
+  padding: 0.75rem;
+  margin-right: 0.25rem;
+}
+/* 
+#bars {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  background-color: #e4e0e1;
+} */
+
+#wrapper {
+  display: grid;
+  grid-template-rows: minmax(0, auto);
+  grid-template-columns: minmax(0, 1fr) repeat(6, minmax(0, 175px)) minmax(
+      0,
+      1fr
+    );
+  min-height: 100%;
+}
+
+main {
+  grid-column: 2 / 8;
+  grid-row: 3 / 4;
+  background-color: white;
+  padding: 2rem 5rem 2rem 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* #hero-image {
+  background-image: url(images/airpods.jpg);
+  background-repeat: no-repeat;
+  height: 700px;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  background-position: center;
+  background-size: cover;
+} */
+
+.hero-text-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.random-song {
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  height: 175px;
+  background-color: white;
+  margin-top: 3rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+.flex-box {
+  grid-row: 3 / 5;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-box {
+  background-color: white;
+  text-align: center;
+  height: auto;
+  width: 400px;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 0.5rem;
+}
+
+.white-box-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  grid-column: 2 / 8;
+}
+
+button {
+  align-items: center;
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0.5rem 0rem 1rem 0.1rem;
+}
+
+button:hover {
+  background-color: #5d5d5d;
+  border: #5d5d5d;
+}
+
+/* .add-button {
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.delete-button {
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+}
+.edit-button {
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+} */
+
+.buttons-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.enter-button {
+  flex-direction: column;
+}
+
+#start {
+  display: flex;
+  flex-direction: column;
+}
+#signup {
+  flex-direction: column;
+}
+
+#login {
+  flex-direction: column;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  font-size: 1.15rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 1rem 0rem 1rem 0rem;
+}
