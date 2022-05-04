@@ -1,4 +1,6 @@
-# Project Message log
+# Project My Favorite Songs
+
+- My favorite songs allows the user to input their favorite songs and create a log of what their favorite songs are.
 
 ## Resource
 
